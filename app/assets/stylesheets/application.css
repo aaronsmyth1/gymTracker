@@ -1,0 +1,189 @@
+/*
+ * This is a manifest file that'll be compiled into application.css.
+ *
+ * With Propshaft, assets are served efficiently without preprocessing steps. You can still include
+ * application-wide styles in this file, but keep in mind that CSS precedence will follow the standard
+ * cascading order, meaning styles declared later in the document or manifest will override earlier ones,
+ * depending on specificity.
+ *
+ * Consider organizing styles into separate files for maintainability.
+ */
+
+ table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+ }
+
+ th, td{
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+ }
+
+ a.button, input[type=submit]{
+    background: #007bff;
+    color: white !important;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+ }
+
+ a.button:hover, input[type=submit]:hover{
+    background: #0056b3;
+ }
+
+*{
+   margin: 0px;
+ }
+ 
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #1f2937;
+  background-color: #f9fafb;
+}
+
+div{
+   text-align: center;
+   border: #353a3e 1px;
+   border-radius: 10px;
+   background-color: aliceblue;
+}
+
+a {
+  color: #4774d5; 
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.15s ease, color 0.15s ease;
+}
+
+a:hover {
+  transform: scale(1.03);
+  color: #4774d5; 
+}
+
+a:visited {
+  color: #4774d5 
+}
+
+
+.logo{
+   width: 35px;
+   height: 35px;
+}
+
+.workout-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.workout-card {
+  background: #f9fafb;
+  color: #1f2937;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.workout-card:hover {
+  transform: scale(1.02);
+}
+
+.workout-card strong {
+  color: #224082;
+}
+
+.workout-card div {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+}
+
+.workout-link {
+  text-decoration: none;
+  color: #224082;
+  font-weight: 500;
+  transition: color 0.15s ease, transform 0.15s ease;
+}
+
+.workout-link:hover {
+  color: #1d4ed8;
+  transform: scale(1.05);
+}
+
+.button {
+  background: #224082;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.button:hover {
+  background: #1d4ed8;
+  transform: scale(1.03);
+}
+
+
+.navbar {
+  background: #224082f0;
+  border-bottom: 2px solid black;
+  padding: 10px 20px;
+
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+}
+
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 45px;
+  width: auto;
+  border-radius: 6px;
+}
+
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;  
+}
+
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: transform 0.15s ease, color 0.15s ease;
+  font-size: 1rem;
+  position: relative;
+}
+
+
+.nav-link:hover {
+  transform: scale(1.05);
+  color: #cbd5e1;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #cbd5e1;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}

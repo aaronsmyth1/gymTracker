@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  exercise: MyString
+  weight: 1
+  reps: 1
+  workout_date: 2025-11-02
+
+two:
+  exercise: MyString
+  weight: 1
+  reps: 1
+  workout_date: 2025-11-02
