@@ -1,0 +1,151 @@
+/* === 1. Base Reset & Typography === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #1f2937;
+  background-color: #f9fafb;
+}
+
+/* === 2. Links === */
+a {
+  color: #4774d5;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.15s ease, color 0.15s ease;
+}
+
+a:hover {
+  transform: scale(1.03);
+  color: #4774d5;
+}
+
+/* === 3. Main Content === */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* center horizontally */
+  text-align: center;       /* center text inside */
+  padding: 40px 20px;
+  width: 100%;
+}
+
+/* Button wrapper */
+.button-wrapper {
+  margin: 20px 0;
+}
+
+/* === 4. Navbar Styles === */
+.navbar {
+  background: #224082f0;
+  border-bottom: 2px solid black;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 45px;
+  width: auto;
+  border-radius: 6px;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-link {
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  position: relative;
+  text-decoration: none;
+  transition: transform 0.15s ease, color 0.15s ease;
+}
+
+.nav-link:hover {
+  transform: scale(1.05);
+  color: #cbd5e1;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #cbd5e1;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* === 5. Workout Section (3-column responsive grid) === */
+.workout-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1000px; /* limits width on large screens */
+  margin-top: 30px;
+}
+
+.workout-card {
+  background: #ffffff;
+  color: #1f2937;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.06);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.workout-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.workout-card strong {
+  color: #224082;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.workout-card div {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+}
+
+.workout-link {
+  text-decoration: none;
+  color: #224082;
+  font-weight: 500;
+  transition: color 0.15s ease, transform 0.15s ease;
+}
+
+.workout-link:hover {
+  color: #1d4ed8;
+  transform: scale(1.05);
+}
+
+/* === 6. Misc logos inside cards if needed === */
+.logo {
+  width: 35px;
+  height: 35px;
+}
