@@ -53,7 +53,6 @@ class WorkoutsController < ApplicationController
       @workout = current_user.workouts.find(params[:id])
     end
 
-    # Strong parameters
     def workout_params
       params.require(:workout).permit(:exercise, :weight, :reps, :workout_date)
     end
