@@ -1,7 +1,13 @@
 require "test_helper"
 
+
+
 class WorkoutsControllerTest < ActionDispatch::IntegrationTest
+  include Devise::Test::IntegrationHelpers
+
   setup do
+    @user = users(:one)
+    sign_in @user
     @workout = workouts(:one)
   end
 
