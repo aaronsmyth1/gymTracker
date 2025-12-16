@@ -112,3 +112,6 @@ queue:
 
 cable:
   <<: *production
+
+cache:
+  <<: *production 
